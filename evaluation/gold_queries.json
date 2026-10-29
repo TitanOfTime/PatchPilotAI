@@ -1,0 +1,12 @@
+[
+  {"query":"Where does the gateway require the Idempotency-Key header and replay duplicate requests?","relevant_files":["backend/gateway-service/src/main/java/com/fintech/gateway/filter/IdempotencyFilter.java"]},
+  {"query":"How are Stripe payment webhook signatures and events handled?","relevant_files":["backend/clearing-service/src/main/java/com/fintech/clearing/controller/StripeWebhookController.java"]},
+  {"query":"Where are JWT access tokens generated and validated?","relevant_files":["backend/auth-service/src/main/java/com/fintech/auth/service/JwtService.java"]},
+  {"query":"How does user registration and login authentication work?","relevant_files":["backend/auth-service/src/main/java/com/fintech/auth/service/AuthService.java"]},
+  {"query":"Where does the transfer saga orchestrate debit credit and compensation?","relevant_files":["backend/ledger-service/src/main/java/com/fintech/ledger/service/command/TransferSagaOrchestrator.java"]},
+  {"query":"Where are exchange rates cached and currency conversion rates calculated?","relevant_files":["backend/fx-service/src/main/java/com/fintech/fx/service/FxService.java"]},
+  {"query":"Where are customer identity values tokenized?","relevant_files":["backend/auth-service/src/main/java/com/fintech/auth/service/TokenizationService.java"]},
+  {"query":"Which controller pushes notifications to WebSocket sessions?","relevant_files":["backend/notification-service/src/main/java/com/fintech/notification/controller/WebSocketPushController.java"]},
+  {"query":"Which repository persists webhook event records?","relevant_files":["backend/clearing-service/src/main/java/com/fintech/clearing/repository/WebhookEventRepository.java"]},
+  {"query":"How are paginated transaction history queries implemented?","relevant_files":["backend/ledger-service/src/main/java/com/fintech/ledger/service/query/TransactionQueryService.java"]}
+]
